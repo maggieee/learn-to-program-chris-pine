@@ -28,12 +28,22 @@ class OrangeTree
 		one_year_passes
 	end
 
+	def speedy_death
+		48.times do
+			if @alive
+				one_year_passes
+			end
+		end
+	end
+
+
+
 
 	private
 
-	def mature?
-		@age >= 3 
-	end
+	# def mature?
+	# 	@age >= 3 
+	# end
 
 	def one_year_passes
 		@age = @age + 1
@@ -66,13 +76,15 @@ class OrangeTree
 end
 
 tree = OrangeTree.new 'Leafy'
-tree.turn_the_sun
-tree.turn_the_sun
-tree.turn_the_sun
-tree.turn_the_sun
-tree.pick_an_orange
-tree.count_the_oranges
-tree.turn_the_sun
-tree.pick_an_orange
-tree.pick_an_orange
-tree.pick_an_orange
+tree.speedy_death
+# tree.turn_the_sun
+# tree.turn_the_sun
+# tree.turn_the_sun
+# tree.pick_an_orange
+# tree.count_the_oranges
+# tree.turn_the_sun
+# tree.pick_an_orange
+# tree.pick_an_orange
+# tree.pick_an_orange
+
+
